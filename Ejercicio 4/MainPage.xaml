@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_4.MainPage">
+
+    <ScrollView BackgroundColor="MistyRose">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="ccu.png"
+              
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="Ejercicio 4" TextColor="DarkCyan" HorizontalOptions="Center" FontSize="Subtitle"/>
+
+            <Label Text="Digite el numero entero" FontAttributes="Bold" TextColor="DarkOliveGreen"/>
+            <Entry x:Name="N" Placeholder="Ingrese un numero" TextColor="Black"/>
+         
+
+            <Button
+                x:Name="CounterBtn"
+                Text="ver resultado"
+                Clicked="CounterBtn_Clicked"
+                BackgroundColor="DeepPink"
+                TextColor="White"
+                HorizontalOptions="Center"/>
+            
+            <Label Text="El numero al cuadrado es:" FontAttributes="Bold" TextColor="DarkMagenta"/>
+            <Entry x:Name="C" Placeholder="0" IsEnabled="False"/>
+
+            <Label Text="El numero al cubo es:" FontAttributes="Bold" TextColor="DarkMagenta"/>
+            <Entry x:Name="Cu" Placeholder="0" IsEnabled="False"/>
+                
+
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
